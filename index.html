@@ -17,7 +17,25 @@
 
     <div>
       <form id="user-input">
+        <!-- Bruker Tall -->
         <input type="number">
+        
+        <!-- Velg operasjon -->
+        <fieldset>
+          <legend>Math Operation</legend>
+          
+          <div>
+            <input type="radio" name="operation" value="multiply" id="multiply">
+            <label for="multiply">Multiply</label>
+          </div>
+          
+          <div>
+            <input type="radio" name="operation" value="addition" id="addition">
+            <label for="addition">Addition</label>
+          </div>
+        </fieldset>
+
+        <!-- Submit knappe -->
         <button>Submit</button>
       </form>
 
