@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="style.css">
-  <title>Input Handling</title>
-</head>
-<body>
-  <header>
-    Input Hanlding
-  </header>
+		<link rel="stylesheet" href="style.css" />
+		<title>Input Handling</title>
+	</head>
+	<body>
+		<section>
+			<h1>Unit Converter</h1>
 
-  <section>
-    <h2>Form Element</h2>
+			<form id="user-input" class="converter">
+				<input type="number" name="inputValue" />
 
-    <div>
-      <form id="user-input">
-        <!-- Bruker Tall -->
-        <input type="number">
-        
-        <!-- Velg operasjon -->
-        <fieldset>
-          <legend>Math Operation</legend>
-          
-          <div>
-            <input type="radio" name="operation" value="multiply" id="multiply">
-            <label for="multiply">Multiply</label>
-          </div>
-          
-          <div>
-            <input type="radio" name="operation" value="addition" id="addition">
-            <label for="addition">Addition</label>
-          </div>
-        </fieldset>
+				<h2>From</h2>
+				<div>
+					<input type="radio" name="fromUnit" value="meter" id="fromMeter" />
+					<label for="fromMeter">Meter</label>
+				</div>
+				<div>
+					<input type="radio" name="fromUnit" value="kilometer" id="fromKilometer" />
+					<label for="fromKilometer">Kilometer</label>
+				</div>
 
-        <!-- Submit knappe -->
-        <button>Submit</button>
-      </form>
+				<h2>To</h2>
+				<div>
+					<input type="radio" name="toUnit" value="meter" id="toMeter" />
+					<label for="toMeter">Meter</label>
+				</div>
+				<div>
+					<input type="radio" name="toUnit" value="kilometer" id="toKilometer" />
+					<label for="toKilometer">Kilometer</label>
+				</div>
 
-      <div class="display">
-        <h3 id="display-text"></h3>
-      </div>
-    </div>
-  </section>
+				<button type="submit">Convert</button>
+			</form>
 
-  <!-- "Defer" gjør at JavaScript kjøres etter alt annet har skjedd -->
-  <script defer src="main.js"></script>
-</body>
+			<div id="display-text" class="result"></div>
+		</section>
+
+		<!-- "Defer" gjør at JavaScript kjøres etter alt annet har skjedd -->
+		<script defer src="main.js"></script>
+	</body>
 </html>

@@ -1,0 +1,21 @@
+* {
+	padding: 0.3em;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	min-height: 100svh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.result {
+	font-size: 32px;
+	color: red;
+	text-align: center;
+}
