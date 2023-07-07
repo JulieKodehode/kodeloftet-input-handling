@@ -59,6 +59,6 @@ function setDisplayContent(result) {
 	// console.log(displayValue);
 
 	// Oppdaterer HTML her
-	// .toFixed(0) er en metode som fjerner desimaler, tallet er hvor mange desimaler vi ønsker - som er 0
-	displayElement.textContent = displayValue.toFixed(0);
+	// .toFixed(0) er en metode som fjerner desimaler, tallet er hvor mange desimaler vi ønsker - som er 2
+	displayElement.textContent = displayValue.toFixed(2);
 }
